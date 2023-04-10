@@ -1,0 +1,20 @@
+
+@media screen and (max-width: 1400px) {
+    .main-container
+    {
+        flex-direction: column;
+        height: 1000px;
+    }
+}
+@media screen and (max-width: 799px) {
+    .main-container
+    {
+        top: 102px !important;
+        width: 100%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    
+}

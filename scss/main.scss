@@ -1,42 +1,12 @@
-$font-stack: 'Sora';
+// Abstracts
+@import "abstracts/variables";
 
-body
-{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    background-color: white;
-    font-family: $font-stack;
-}
-.main-container
-{
-    display: flex;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    top: 172px;
-    background-image: url("../img/bg.svg");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: right bottom;
-}
-@media screen and (max-width: 1400px) {
-    .main-container
-    {
-        flex-direction: column;
-        height: 1000px;
-    }
-}
-@media screen and (max-width: 799px) {
-    .main-container
-    {
-        top: 102px;
-        width: 100%;
-    }
-  }
-  
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+//Base 
+@import "base/reset";
 
-}
+// Layout
+@import "layout/header";
+@import "layout/navigation";
+
+// Pages
+@import "pages/home";

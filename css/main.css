@@ -1,4 +1,4 @@
-body {
+html, body {
   display: flex;
   flex-direction: column;
   margin: 0px;
@@ -7,6 +7,244 @@ body {
   font-family: "Sora";
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3259d7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dceffd;
+}
+
+#demo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 45px;
+  color: white;
+  z-index: 3;
+}
+#demo-div ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#demo-div ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1px;
+  padding: 5px;
+}
+#demo-div ul li h3 {
+  font-size: 16px;
+  font-family: "Sora";
+  margin-top: 20px;
+}
+#demo-div ul li span {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2ccab9 url("../img/loading.gif") no-repeat center;
+  z-index: 999;
+  overflow: visible;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 42px;
+  z-index: 3;
+}
+.header .mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+}
+.header .mainLogo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* MENU */
+@media (min-width: 800px) {
+  #mainLogo {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 799px) {
+  #demo-div > ul > li > h3 {
+    font-size: 13px;
+  }
+  .mainLogo img {
+    height: 60px !important;
+  }
+}
+.menu > li > a {
+  color: #26262c;
+  font-family: "Sora";
+  font-weight: bold;
+}
+
+.header .mainLogo {
+  float: left;
+}
+
+.menu {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu a {
+  display: block;
+  padding: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #76787f;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 800px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header {
+    display: flex;
+    height: 130px;
+  }
+  .menu {
+    margin-right: 70px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main-container {
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .main-container {
+    top: 102px !important;
+    width: 100%;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 .main-container {
   display: flex;
   width: 100%;
@@ -17,18 +255,4 @@ body {
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: right bottom;
-}
-
-@media screen and (max-width: 1400px) {
-  .main-container {
-    flex-direction: column;
-    height: 1000px;
-  }
-}
-@media screen and (max-width: 799px) {
-  .main-container {
-    top: 102px;
-    width: 100%;
-  }
-}
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

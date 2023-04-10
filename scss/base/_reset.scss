@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+html,body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: $font-stack;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: $fifth-color; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primary-color; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #dceffd; 
+}
