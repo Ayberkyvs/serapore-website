@@ -4,10 +4,10 @@
     font-family:$font-stack;
     font-weight: bold;
 }
-.header .mainLogo
+.inner-header .mainLogo
 {
     float: left;
-   // display: block;
+    //display: block;
 }
 .menu
 {
@@ -29,20 +29,20 @@
 {
     color: $fourth-color;
 }
-.header .menu
+.inner-header .menu
 {
     clear:both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-.header .menu-icon
+.inner-header .menu-icon
 {
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
-.header .menu-icon .nav-icon
+.inner-header .menu-icon .nav-icon
 {
     background:black;
     display: block;
@@ -51,7 +51,7 @@
     position: relative;
     transition: background .2s ease-out;
 }
-.header .menu-icon .nav-icon:before
+.inner-header .menu-icon .nav-icon:before
 {
     background: black;
     content: "";
@@ -63,7 +63,7 @@
     top:5px;
 }
 
-.header .menu-icon .nav-icon:after
+.inner-header .menu-icon .nav-icon:after
 {
     background: black;
     content: "";
@@ -74,48 +74,48 @@
     transition:all .2s ease-out;
     top:-5px;
 }
-.header .menu-btn
+.inner-header .menu-btn
 {
     display: none;
 }
-.header .menu-btn:checked ~ .menu
+.inner-header .menu-btn:checked ~ .menu
 {
     max-height: 240px;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon
 {
     background:transparent;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:before
 {
     transform: rotate(-45deg);
     top:0;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:after
 {
     transform: rotate(45deg);
     top: 0;
 }
 @media (min-width:800px)
 {
-    .header li{
+    .inner-header li{
         float: left;
     }
-    .header li a
+    .inner-header li a
     {
         padding: 20px 30px;
     }
-    .header .menu
+    .inner-header .menu 
     {
         clear: none;
         float: right;
         max-height: none;
     }
-    .header .menu-icon
+    .inner-header .menu-icon
     {
         display: none;
     }
-    .header
+    .inner-header
     {
         display: flex;
         height: 130px;

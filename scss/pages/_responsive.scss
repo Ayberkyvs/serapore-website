@@ -3,13 +3,12 @@
     .main-container
     {
         flex-direction: column;
-        height: 1000px;
     }
 }
 @media screen and (max-width: 799px) {
     .main-container
     {
-        top: 102px !important;
+        top: 90px !important;
         width: 100%;
     }
   }

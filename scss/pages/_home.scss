@@ -3,12 +3,21 @@
 .main-container
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     position: relative;
-    top: 172px;
+    top: 120px;
     background-image: url("../img/bg.svg");
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: right bottom;
+    background-size: 90%;
+    background-position: bottom right;
+    .main-inner-container{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 60%;
+    }
 }
