@@ -192,6 +192,7 @@ body {
   }
   .betaLogo img {
     width: 40px;
+    max-width: 40px;
   }
   .demo-div-menu {
     width: 100% !important;
@@ -220,6 +221,9 @@ body {
   }
   .mainLogo img {
     height: 50px !important;
+    width: 190px !important;
+    max-width: 190px !important;
+    min-width: 190px !important;
   }
   .header {
     height: 60px !important;
