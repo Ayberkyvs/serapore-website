@@ -58,7 +58,7 @@ html, body {
   margin-right: 20px;
   padding: 3px;
   font-size: 14px;
-  color: white;
+  color: white !important;
   font-family: "Miriam Libre", sans-serif;
 }
 #demo-div .demo-div-menu li i {
