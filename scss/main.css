@@ -5,6 +5,8 @@ html, body {
   padding: 0px;
   background-color: white;
   font-family: "Miriam Libre", sans-serif;
+  background: white url("../../img/body-bg.png") no-repeat center;
+  background-size: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -415,6 +417,7 @@ html, body {
 .aboutus .aboutus-col2 .col2-items div h5 {
   color: white;
   font-size: 16px;
+  text-align: justify;
   font-weight: 300;
 }
 
@@ -441,6 +444,155 @@ html, body {
   }
 }
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+.client {
+  height: auto;
+  width: 90% !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.client .client-gallery {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 1;
+  justify-content: space-between;
+  padding: 10px;
+  padding-bottom: 0 !important;
+}
+.client .client-gallery div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.client .client-gallery div img {
+  filter: brightness(0%);
+  width: 150px;
+  height: auto;
+}
+.client .client-gallery div img:hover {
+  filter: brightness(100%);
+  scale: 1.1;
+  transition: ease-in-out 0.2s;
+}
+
+.client-info {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+  padding: 10px;
+}
+.client-info .client-info-2 {
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #faf8ff;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.client-info .client-info-2 h6 {
+  font-size: 16px;
+  color: #f18f01;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.client-info .client-info-2 h3 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.client-info .client-info-2 h5 {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+  margin-bottom: 50px;
+  font-weight: 300 !important;
+}
+.client-info .client-info-2 button {
+  background-color: #f18f01;
+  border: 1px solid #f18f01;
+  color: white;
+  width: 150px;
+  height: 50px;
+  width: 200px;
+}
+.client-info .client-info-2 button:hover {
+  background-color: transparent;
+  color: #f18f01;
+  border: 1px solid #f18f01;
+  transition: ease-in-out 0.1s;
+}
+.client-info .client-info-2 button:focus {
+  background-color: #f18f01;
+  border: 1px solid #f18f01;
+  transition: ease-in-out 0.1s;
+  color: white;
+}
+.client-info .client-info-2 h3 {
+  color: black;
+}
+.client-info .client-info-2 h5 {
+  color: black;
+}
+.client-info .client-info-2 h6 {
+  color: #f18f01;
+}
+.client-info .client-info-2 .text-flex {
+  width: 100%;
+  height: auto !important;
+}
+.client-info .client-info-2 .text-flex .text-flex-1 {
+  display: inline-block;
+  width: auto;
+  height: 150px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #051951;
+  margin-right: 20px;
+}
+.client-info .client-info-2 .text-flex .text-flex-2 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  height: 110px;
+  color: #051951;
+}
+
+@media screen and (max-width: 1400px) {
+  .client {
+    padding: 0 !important;
+    width: 100% !important;
+    flex-direction: column-reverse;
+  }
+  .client-gallery {
+    width: 100% !important;
+  }
+  .client-gallery div {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .client-gallery div img {
+    width: 120px !important;
+  }
+  .client-info {
+    width: 100% !important;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 .main-container {
   display: flex;
   justify-content: center;
@@ -463,6 +615,14 @@ html, body {
   position: relative;
   width: 100%;
   height: auto !important;
+}
+
+.page-item-3 {
+  background-color: white;
+  display: flex;
+  position: relative;
+  height: auto !important;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 1400px) {
