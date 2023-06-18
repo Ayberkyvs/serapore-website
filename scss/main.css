@@ -1,0 +1,337 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f18f01;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dceffd;
+}
+
+#demo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  background-color: #f18f01;
+  width: 100%;
+  height: 50px;
+  color: white;
+  z-index: 3;
+}
+#demo-div .demo-div-menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  margin: 0px;
+  text-align: center;
+}
+#demo-div .demo-div-menu li {
+  text-align: center;
+  margin-right: 20px;
+  padding: 3px;
+  font-size: 14px;
+  color: white;
+  font-family: "Miriam Libre", sans-serif;
+}
+#demo-div .demo-div-menu li i {
+  margin-right: 2px;
+  font-size: 16px !important;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8) url("../../img/loading.gif") no-repeat center;
+  background-size: 60px;
+  z-index: 999;
+  overflow: visible;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 90px !important;
+  background-color: white;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50px;
+  z-index: 3;
+}
+.header .inner-header {
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .inner-header .mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+.header .inner-header .mainLogo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.betaLogo1 img {
+  width: 50px;
+  height: auto;
+}
+
+.betaLogo {
+  display: none;
+  position: absolute;
+  width: auto;
+  left: 0;
+  top: 50%;
+  height: auto;
+  transform: translate(0%, -50%);
+}
+
+/* MENU */
+@media (min-width: 800px) {
+  #mainLogo {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .betaLogo1 {
+    display: none;
+  }
+  .betaLogo {
+    display: inline-flex;
+    margin-left: 10px;
+  }
+  .betaLogo img {
+    width: 40px;
+  }
+  .demo-div-menu {
+    width: 100% !important;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  .demo-div-menu > li {
+    width: 25%;
+    margin: 0 !important;
+    font-size: 10px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .demo-div-menu > li i {
+    margin-bottom: 3px;
+  }
+  .mainLogo {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100% !important;
+    width: auto !important;
+  }
+  .mainLogo img {
+    height: 50px !important;
+  }
+  .header {
+    height: 60px !important;
+  }
+  .inner-header {
+    width: 100% !important;
+  }
+}
+.menu > li > a {
+  color: #26262c;
+  font-family: "Miriam Libre", sans-serif;
+  font-weight: bold;
+}
+
+.inner-header .mainLogo {
+  float: left;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu a {
+  display: flex;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #76787f;
+}
+
+.inner-header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.inner-header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.inner-header .menu-icon .nav-icon {
+  background: black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.inner-header .menu-icon .nav-icon:before {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.inner-header .menu-icon .nav-icon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+.inner-header .menu-btn {
+  display: none;
+}
+
+.inner-header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.inner-header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 800px) {
+  .inner-header li {
+    float: left;
+  }
+  .inner-header li a {
+    padding: 20px 30px;
+  }
+  .inner-header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .inner-header .menu-icon {
+    display: none;
+  }
+  .inner-header {
+    display: flex;
+    height: 130px;
+  }
+  .menu {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .carousel-inner img {
+    min-height: 300px !important; /* Set slide height here */
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 140px;
+}
+.main-container .inner-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 799px) {
+  .main-container {
+    top: 110px !important;
+    width: 100%;
+  }
+  .inner-main-container {
+    width: 100% !important;
+  }
+  .container-fluid {
+    min-width: 100% !important;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other *//*# sourceMappingURL=main.css.map */

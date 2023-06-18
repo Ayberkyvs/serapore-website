@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+#demo-div {
+  background-color: black !important;
+  text-align: center;
+  align-items: center;
+  height: 40px !important;
+}
+#demo-div h6 {
+  font-size: 14px;
+  margin: 0 !important;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+body {
+  background-color: #ffcf00 !important;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.container-fluid img {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+.container-fluid h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.container-fluid button {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+}
+.container-fluid button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  transition: ease-in-out 0.1s;
+}
+.container-fluid button:focus {
+  background-color: black !important;
+  border: 1px solid black !important;
+  color: white;
+}
+
+@media screen and (max-width: 799px) {
+  #demo-div {
+    height: auto !important;
+  }
+  #demo-div h6 {
+    font-size: 12px !important;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+#demo-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  background-color: #f18f01;
+  width: 100%;
+  height: 50px;
+  color: white;
+  z-index: 3;
+}
+#demo-div .demo-div-menu {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  margin: 0px;
+  text-align: center;
+}
+#demo-div .demo-div-menu li {
+  text-align: center;
+  margin-right: 20px;
+  padding: 3px;
+  font-size: 14px;
+  color: white;
+  font-family: "Miriam Libre", sans-serif;
+}
+#demo-div .demo-div-menu li i {
+  margin-right: 2px;
+  font-size: 16px !important;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8) url("../../img/loading.gif") no-repeat center;
+  background-size: 60px;
+  z-index: 999;
+  overflow: visible;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 90px !important;
+  background-color: white;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50px;
+  z-index: 3;
+}
+.header .inner-header {
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .inner-header .mainLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+.header .inner-header .mainLogo img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.betaLogo1 img {
+  width: 50px;
+  height: auto;
+}
+
+.betaLogo {
+  display: none;
+  position: absolute;
+  width: auto;
+  left: 0;
+  top: 50%;
+  height: auto;
+  transform: translate(0%, -50%);
+}
+
+/* MENU */
+@media (min-width: 800px) {
+  #mainLogo {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .betaLogo1 {
+    display: none;
+  }
+  .betaLogo {
+    display: inline-flex;
+    margin-left: 10px;
+  }
+  .betaLogo img {
+    width: 40px;
+  }
+  .demo-div-menu {
+    width: 100% !important;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+  .demo-div-menu > li {
+    width: 25%;
+    margin: 0 !important;
+    font-size: 10px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .demo-div-menu > li i {
+    margin-bottom: 3px;
+  }
+  .mainLogo {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100% !important;
+    width: auto !important;
+  }
+  .mainLogo img {
+    height: 50px !important;
+  }
+  .header {
+    height: 60px !important;
+  }
+  .inner-header {
+    width: 100% !important;
+  }
+}
+html, body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: "Miriam Libre", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f18f01;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dceffd;
+}/*# sourceMappingURL=style.css.map */

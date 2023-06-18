@@ -1,7 +1,7 @@
 .menu>li>a
 {
     color: $third-color;
-    font-family:$font-stack;
+    font-family: $font-stack;
     font-weight: bold;
 }
 .inner-header .mainLogo
@@ -11,6 +11,9 @@
 }
 .menu
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -20,9 +23,9 @@
 }
 .menu a
 {
+    display: flex;
     display: block;
     padding: 20px;
-    border-right: 1px solid rgb(0, 0, 0, .3);
     text-decoration: none;
 }
 .menu a:hover
@@ -96,6 +99,7 @@
     transform: rotate(45deg);
     top: 0;
 }
+
 @media (min-width:800px)
 {
     .inner-header li{
@@ -122,6 +126,6 @@
     }
     .menu
     {
-        margin-right: 70px;
+        margin-right: 30px;
     }
 }    
