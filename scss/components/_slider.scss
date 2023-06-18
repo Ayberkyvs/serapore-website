@@ -1,10 +1,23 @@
-@media screen and (max-width: 1400px) {
+.carousel-inner{
+    img{
+        min-height: 800px !important;
+        max-height: 800px !important;
+    }
+}
 
+@media screen and (max-width: 1400px) {
+    .carousel-inner{
+        img{
+            min-height: 500px !important;
+            max-height: 500px !important;
+        }
+    }
 }
 @media screen and (max-width: 799px) {
     .carousel-inner{
         img{
-            min-height: 300px !important; /* Set slide height here */
+            min-height: 400px !important;
+            max-height: 400px !important;
         }
     }
   }

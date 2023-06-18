@@ -1,5 +1,6 @@
 // Abstracts
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 //Base 
 @import "base/reset";
@@ -7,6 +8,10 @@
 // Layout
 @import "layout/header";
 @import "layout/navigation";
+
+// Components
+@import "components/slider";
+@import "components/aboutus";
 
 // Pages
 @import "pages/home";
