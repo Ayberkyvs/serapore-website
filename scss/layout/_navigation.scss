@@ -109,6 +109,12 @@
     .inner-header li a
     {
         padding: 20px 30px;
+        
+    }
+    .inner-header li a:hover{
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color;
+        transition: ease-in-out 0.150s;
     }
     .inner-header .menu 
     {
@@ -131,6 +137,6 @@
     }
     .menu a
     {
-        font-size: 16px;
+        font-size: 14px;
     }
 }    
