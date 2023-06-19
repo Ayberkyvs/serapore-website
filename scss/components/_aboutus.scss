@@ -6,7 +6,6 @@
     flex-wrap: nowrap;
     width: $header-inner !important;
     height: 100% !important;
-    padding: 100px;
     div{
         display: flex;
         flex-direction: column;
@@ -68,15 +67,14 @@
 @media screen and (max-width: 799px) {
     .aboutus{
         flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 20px;
         .aboutus-col1{
             margin-top: 30px;
             width: 100%;
-            margin-bottom: 100px;
+            margin-bottom: 20px;
         }
         .aboutus-col2{
             width: 100%;
+            margin-bottom: 20px;
             h3{
                 font-size: 30px !important;
                 width: 150px !important;

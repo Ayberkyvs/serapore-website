@@ -20,13 +20,14 @@
     position: relative;
     width: 100%;
     height: auto !important;
+    padding: 50px;
 }
 .page-item-3{
     background-color: $fifth-color;
     display: flex;
     position: relative;
     height: auto !important;
-    padding: 100px;
+    padding: 50px;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -36,7 +37,7 @@
     position: relative;
     width: 100%;
     height: auto !important;
-    padding: 100px;
+    padding: 50px;
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
@@ -59,6 +60,10 @@
     }
     .container-fluid{
         min-width: 100% !important;
+    }
+    .page-item-2{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
   }
   

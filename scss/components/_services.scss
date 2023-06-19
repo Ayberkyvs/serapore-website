@@ -62,8 +62,9 @@
 @media screen and (max-width: 1400px) {
     .services-body{
         flex-direction: column !important;
+        align-items: center;
         .inner-services-body{
-            width: 100% !important;
+            width: 95% !important;
             margin-bottom: 20px;
         }
     }
