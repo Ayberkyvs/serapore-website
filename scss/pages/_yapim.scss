@@ -19,13 +19,14 @@
 
 html,
 body {
-	height: 100%;
+	height: 100% !important;
 	font-family: $font-stack;
 }
 
 body {
 	background-color: #ffcf00 !important;
 	width: 100%;
+	min-height: 100% !important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -33,12 +34,16 @@ body {
 }
 .container-fluid{
 	width: 100%;
-	height: 100%;
+	height: 100% !important;
+	min-height: 100vh !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding-top: 100px;
+	background-image: url("../../img/yapim/watermakayberk.png");
+	background-size: 100%;
+	border: 1px solid red;
 	img{
 		display: flex;
 		max-width: 800px;
