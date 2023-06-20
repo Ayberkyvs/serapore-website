@@ -1,0 +1,152 @@
+.footer{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $fifth-color;
+    .inner-footer{
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        justify-content: space-between;
+        align-items: center;
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 70%;
+        }
+    }
+    .footer-2{
+        align-items: left;
+
+    }
+    div{
+        box-sizing: border-box;
+        justify-content: space-evenly;
+        padding: 30px;
+        border-right: 2px solid $primary-color;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 100%;
+        align-items: flex-start;
+        h3{
+            font-size: 18px;
+            margin-bottom: 20px;    
+            font-weight: bold;
+        }
+        h5{
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        h4{
+            margin-top: 30px;
+            font-size: 16px;
+
+        }
+        a{color: black;}
+    }
+    .footer-3{
+        border: 0px;
+        h3{
+            margin-bottom: 20px !important;
+        }
+    }
+    .footer-social{
+        width: 100%;
+        height: auto;
+        padding: 0px !important;
+        border: 0px !important;
+        align-items: stretch !important;
+        h3{
+            font-size: 16px;
+            font-weight: $title;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between !important;
+            flex-direction: row;
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+            li{
+                width: auto;
+                a{
+                    i{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+.footer-copyright{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    color: white;
+    height: 40px;
+    border: 1px solid red;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-size: 14px;
+        margin: 0 !important;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .inner-footer{
+    flex-direction: column !important;
+    height: auto !important;
+    div{
+        width: 100% !important;
+        border-right: 0px !important;
+        border-bottom: 2px solid $primary-color !important;
+    }
+    .footer-1{
+        img{
+            width: 500px;
+        }
+    }
+    }
+}   
+@media screen and (max-width: 799px){
+    .footer{
+        top: 100px;
+    }
+    .footer-1{
+        img{
+            width: 80% !important;
+        }
+    }
+    .footer-copyright{
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        h3{
+            font-size: 14px !important;
+        }
+        #author-mark{
+            margin-top: 20px !important;
+            font-size: 12px !important;
+        }
+    }
+}
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {    
+}

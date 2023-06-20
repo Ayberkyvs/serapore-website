@@ -22,14 +22,13 @@
         @include info-container;
     }
     .aboutus-col2{
+        height: 450px;
         .col2-items{
             display: flex;
             flex-direction: row;
             width: 100%;
             height: 100%;
             border-bottom: 1px solid $primary-color;
-            min-height: 150px;
-            max-height: auto !important;
             div{
                 display: flex;
                 justify-content: center;
@@ -50,7 +49,7 @@
                 }
                 h5{
                     color: white;
-                    font-size: 16px;
+                    font-size: 18px;
                     text-align: justify;
                     font-weight: $paragraph;
                 }
@@ -67,6 +66,7 @@
 @media screen and (max-width: 799px) {
     .aboutus{
         flex-direction: column;
+        width: 100% !important;
         .aboutus-col1{
             margin-top: 30px;
             width: 100%;
@@ -80,7 +80,7 @@
                 width: 150px !important;
             }
             h5{
-                font-size: 14px !important;
+                font-size: 16px !important;
             }
         }
     }

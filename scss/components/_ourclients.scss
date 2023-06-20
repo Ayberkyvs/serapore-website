@@ -55,7 +55,7 @@
         @include info-container;
         h3{color: black;}
         h5{color:black; font-weight: $paragraph;}
-        h6{color: $primary-color; font-weight: $title;}
+        h6{color: $primary-color; font-weight: bold;}
         .text-flex{
             display: flex;
             align-items: center;
