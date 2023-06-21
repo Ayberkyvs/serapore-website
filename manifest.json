@@ -1,0 +1,25 @@
+{
+    "lang": "tr_TR",
+    "dir": "ltr",
+    "name": "SeraPore Vitrifiye Seramik Makineleri",
+    "description": "SeraPore Vitrifiye Makine ve Kalıpları, alanında 30 yıllık tecrübe ve uzmanlığa sahip bir ekibin önderliğinde faaliyet göstermektedir. 1989 yılından bu yana, ekibimiz sürekli büyüyerek ve gelişerek, basınçlı kalıp döküm ve basınçlı döküm makinesi üretiminde öncü bir rol oynamıştır.",
+    "short_name": "SeraPore",
+    "icons": [{
+      "src": "img/icon/icon.webp",
+      "sizes": "64x64",
+      "type": "image/webp"
+    },{
+      "src": "img/icon/icon.png",
+      "sizes": "64x64",
+      "type": "image/PNG"
+    }, {
+      "src": "img/icon/icon128.png",
+      "sizes": "128x128",
+      "type": "image/PNG"
+    }],
+    "start_url": "/",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#f18f01"
+  }
