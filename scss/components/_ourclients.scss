@@ -1,6 +1,6 @@
 .client{
     height: auto;
-    width: 90% !important;
+    width: $header-inner !important;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -10,9 +10,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         flex-basis: 1;
-        justify-content: space-evenly;
-        padding: 10px;
-        padding-bottom: 0 !important;
+        justify-content: space-between;
         div{
             display: flex;
             justify-content: center;
@@ -21,7 +19,7 @@
             height: 200px;
             border: 1px solid black;
             box-sizing: border-box;
-            margin-bottom: 10px;
+            margin:10px;
             img{
                 filter:brightness(0%);
                 width: 150px;
@@ -54,8 +52,20 @@
         height: auto;
         @include info-container;
         h3{color: black;}
-        h5{color:black; font-weight: $paragraph;}
         h6{color: $primary-color; font-weight: bold;}
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3px;
+            width: 100%;
+            height: auto;
+            padding: 0px !important;
+            list-style: inside;
+            li{
+                width: auto;
+                font-size: 14px;
+            }
+        }
         .text-flex{
             display: flex;
             align-items: center;
@@ -102,32 +112,31 @@
 }
 .text-flex-4{
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     height: auto;
     width: auto;
     span{
         height: auto !important;
-        margin-right: 10px;
+        margin-right: 5px;
         i{
-            font-size: 50px;   
+            font-size: 35px;   
         }
     }
     div{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         flex-direction: column;
-        align-items: left;
-        height: 50px;
+        align-items: left center;
+        height: auto;
         h6{
             margin: 0px !important;
-            font-size: 12px;
+            font-size: 12px !important;
         }
         h3{
             margin: 0 !important;
-            font-size: 20px;
+            font-size: 20px !important;
         }
     }
 }
@@ -138,10 +147,10 @@
     height: auto;
     width: 100%;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1700px) {
     .client{
         padding: 0 !important;
-        width: 100% !important;
+        width: 90% !important;
         flex-direction:column-reverse;
     }
     .client-gallery{
@@ -174,6 +183,18 @@
             }
         }
     }
+    .client-info-2{
+        ul{
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+    .client-gallery{
+        padding: 10px;
+        div{
+            margin: 0px !important;
+        }
+    }
+    
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */

@@ -31,6 +31,7 @@ https://ayberkyavas.com
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
   <!-- FONT ICIN -->
   <script src="https://kit.fontawesome.com/ec613c6134.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,6 @@ https://ayberkyavas.com
   <!--================ Demo Bitiş =================-->
 
   <!--================ Header Başlangıç =================-->
-
   <header>
     <div class="header">
       <div class="inner-header">
@@ -69,9 +69,11 @@ https://ayberkyavas.com
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <ul class="menu">
-          <li><a href="hakkımızda.html"><i class="fa-regular fa-address-card"></i> Hakkımızda</a></li>
-          <li><a href="incelemeler.html"><i class="fa-solid fa-plug"></i> Hizmetler</a></li>
-          <li><a href="incelemeler.html"><i class="fa-regular fa-address-book"></i> İletişim</a></li>
+          <li><a data-scroll href="#aboutus"><i class="fa-regular fa-address-card"></i> Hakkımızda</a>
+          </li>
+          <li><a data-scroll href="#services"><i class="fa-solid fa-plug"></i> Hizmetler</a></li>
+          <li><a href="yapim.html"><i class="fa-solid fa-bolt"></i> Ürünlerimiz</a></li>
+          <li><a href="yapim.html"><i class="fa-regular fa-address-book"></i> İletişim</a></li>
         </ul>
       </div>
     </div>
@@ -81,7 +83,7 @@ https://ayberkyavas.com
   <!--================ Header Bitiş =================-->
 
   <!--================ Main Alanı Başlangıç =================-->
-  <main>
+  <main id="main">
     <section>
       <div class="main-container" id="main-container">
         <div class="inner-main-container">
@@ -116,7 +118,7 @@ https://ayberkyavas.com
           <!-- BOOTSTRAP SLAYT BITIS -->
 
           <!--============== Hakkımızda Alanı Başlangıç ==============-->
-          <section class="page-item-2">
+          <section id="aboutus" class="page-item-2">
             <div class="container-fluid aboutus">
               <div class="aboutus-col1">
                 <h6>Hakkımızda</h6>
@@ -172,21 +174,22 @@ https://ayberkyavas.com
           <!--============== Hakkımızda Alanı Bitiş ==============-->
 
           <!--============== Sponsor Alanı Başlangıç ==============-->
-          <section class="page-item-3">
+          <section id="client" class="page-item-3">
             <div class="container-fluid client">
               <div class="client-gallery">
-                <div><img src="img/home/clients/vitraLogo.png" alt="Vitra Logo"></div>
-                <div><img src="img/home/clients/newarchLogo.png" alt="Newarch Logo"></div>
-                <div><img src="img/home/clients/rocaLogo.png" alt="Roca Logo"></div>
-                <div><img src="img/home/clients/serelLogo.png" alt="Serel Logo"></div>
-                <div><img src="img/home/clients/kohlerLogo.png" alt="Kohler Logo"></div>
-                <div><img src="img/home/clients/ottobagnoLogo.png" alt="Otto Bagno Logo"></div>
-                <div><img src="img/home/clients/bienLogo.png" alt="Bien Logo"></div>
-                <div><img src="img/home/clients/alvitLogo.png.png" alt="Alvit Logo"></div>
-                <div><img src="img/home/clients/hatriaLogo.png" alt="Hatria Logo"></div>
-                <div><img src="img/home/clients/americanstandartLogo.svg" alt="American Standart Logo"></div>
-                <div><img src="img/home/clients/cersanitLogo.png" alt="Cersanit Logo"></div>
-                <div><img src="img/home/clients/saudiCeramic.png" alt="Saudi Ceramic Logo"></div>
+                <div id="gallery1"><img src="img/home/clients/vitraLogo.png" alt="Vitra Logo"></div>
+                <div id="gallery2"><img src="img/home/clients/newarchLogo.png" alt="Newarch Logo"></div>
+                <div id="gallery3"><img src="img/home/clients/rocaLogo.png" alt="Roca Logo"></div>
+                <div id="gallery4"><img src="img/home/clients/serelLogo.png" alt="Serel Logo"></div>
+                <div id="gallery5"><img src="img/home/clients/kohlerLogo.png" alt="Kohler Logo"></div>
+                <div id="gallery6"><img src="img/home/clients/ottobagnoLogo.png" alt="Otto Bagno Logo"></div>
+                <div id="gallery7"><img src="img/home/clients/bienLogo.png" alt="Bien Logo"></div>
+                <div id="gallery8"><img src="img/home/clients/alvitLogo.png.png" alt="Alvit Logo"></div>
+                <div id="gallery9"><img src="img/home/clients/hatriaLogo.png" alt="Hatria Logo"></div>
+                <div id="gallery10"><img src="img/home/clients/americanstandartLogo.svg" alt="American Standart Logo">
+                </div>
+                <div id="gallery11"><img src="img/home/clients/cersanitLogo.png" alt="Cersanit Logo"></div>
+                <div id="gallery12"><img src="img/home/clients/saudiCeramic.png" alt="Saudi Ceramic Logo"></div>
               </div>
               <div class="client-info">
                 <div class="client-info-2">
@@ -201,15 +204,35 @@ https://ayberkyavas.com
                       <img src="img/mainLogo.png" alt="Serapore Logo">
                     </div>
                   </div>
-                  <h5>
-                    <b>Kimler ile Çalışıyoruz</b>
-                    <pre></pre>
-                    Roca | Vitra | Serel | Kohler | Catalano İtalya | Axa İtalya | GSI İtalya | Uno Seramik İtalya |
-                    American Standart | Cercanit Poland | Suudi Ceramic | Harsa-İsrail | Hatria | Univeral Rusya |
-                    Ekokerama Uzbekistan | Grandart Uzbekistan | Gozo Uzbekistan | Kleopatra Mısır | Lessico Mısır |
-                    Alvit | Newarc | Bocchi | UgraKeram Rusya | Uno Ceramica İtalya | Laufen-Poland |
-                    Hatria İtalya | OttoBagno | Bien Türkiye
-                  </h5>
+                  <ul>
+                    <li>Roca</li>
+                    <li>Vitra</li>
+                    <li>Serel</li>
+                    <li>Kohler</li>
+                    <li>Catalano, Italy</li>
+                    <li>Axa Italy</li>
+                    <li>GSI Italy</li>
+                    <li>Uno Ceramics Italy</li>
+                    <li>American Standart</li>
+                    <li>Cercanit Poland</li>
+                    <li>Saudi Ceramic</li>
+                    <li>Harsa-Israil</li>
+                    <li>Hatria</li>
+                    <li>Univeral Russia</li>
+                    <li>Ekokerama Uzbekistan</li>
+                    <li>Grandart Uzbekistan</li>
+                    <li>Gozo Uzbekistan</li>
+                    <li>Cleopatra, Egypt</li>
+                    <li>Lessico Egypt</li>
+                    <li>Alvit</li>
+                    <li>Newarc</li>
+                    <li>UgraKeram, Russia</li>
+                    <li>A Ceramic İtalya</li>
+                    <li>Laufen-Poland</li>
+                    <li>Hatria, Italy</li>
+                    <li>OttoBagno</li>
+                    <li>Bien Türkiye</li>
+                  </ul>
                   <div class="client-info-buttons">
                     <a href="pdf/cat23.pdf"><button class="btn btn-danger"> Daha Fazla</button></a>
                     <div class="text-flex-4">
@@ -227,7 +250,7 @@ https://ayberkyavas.com
           <!--============== Sponsor Alanı Bitiş ==============-->
 
           <!--============== Servisler Alanı Başlangıç ==============-->
-          <section class="page-item-4">
+          <section id="services" class="page-item-4">
             <div class="container-fluid services">
               <div class="services-heading">
                 <h3>Hizmetlerimiz</h3>
@@ -339,7 +362,7 @@ https://ayberkyavas.com
         <a href="hakkimizda.html" target="_blank">
           <h5>İletişim</h5>
         </a>
-        <a href="#main-container">
+        <a href="#main">
           <h4 style="text-decoration: underline; text-transform: uppercase;">Ana Sayfayaya Dön <i
               class="fa-solid fa-location-arrow" style="text-decoration: underline;"></i></h4>
         </a>
@@ -357,7 +380,8 @@ https://ayberkyavas.com
           <ul>
             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://youtube.com/@ErtugruLAxeL" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </li>
             <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
           </ul>
         </div>

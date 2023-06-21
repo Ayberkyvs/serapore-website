@@ -279,17 +279,18 @@ html, body {
   top: 0;
 }
 
+.inner-header li a:hover, .inner-header li a.active {
+  color: #f18f01;
+  border-bottom: 1px solid #f18f01;
+  transition: ease-in-out 0.15s;
+}
+
 @media (min-width: 800px) {
   .inner-header li {
     float: left;
   }
   .inner-header li a {
     padding: 20px 30px;
-  }
-  .inner-header li a:hover {
-    color: #f18f01;
-    border-bottom: 1px solid #f18f01;
-    transition: ease-in-out 0.15s;
   }
   .inner-header .menu {
     clear: none;

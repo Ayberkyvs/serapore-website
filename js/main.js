@@ -1,31 +1,27 @@
-var preloader = document.getElementById('loader');
-      function preLoaderHandler(){
-          preloader.style.display = 'none';
-      }
-
-
-var loader;
-
-function loadNow(opacity) {
-    if (opacity <= 0) {
-        displayContent();
-    } else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.05);
-        }, 30);
-    }
-}
-
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    loader = document.getElementById('loader');
-    loadNow(3);
+  var loader = document.getElementById('loader');
+  var content = document.getElementById('content');
+
+  loader.style.transition = 'opacity 0.3s ease-in-out';
+  loader.style.opacity = 1;
+
+  function hideLoader() {
+    loader.style.opacity = 0;
+    setTimeout(function() {
+      loader.style.display = 'none';
+    }, 300);
+  }
+
+  var fadeOutInterval = setInterval(function() {
+    if (loader.style.opacity > 0) {
+      loader.style.opacity -= 0.05;
+    } else {
+      clearInterval(fadeOutInterval);
+      hideLoader();
+    }
+  }, 30);
 });
+
 
 var sayiElementleri = document.querySelectorAll(".sayi");
 
@@ -60,3 +56,23 @@ function scrollOlayDinleyicisi() {
 }
 
 window.addEventListener("scroll", scrollOlayDinleyicisi);
+
+jQuery(document).ready(function($) {
+  // Scroll to the desired section on click
+  // Make sure to add the `data-scroll` attribute to your `<a>` tag.
+  // Example: `<a data-scroll href="#my-section">My Section</a>` will scroll to an element with the id of 'my-section'.
+  function scrollToSection(event) {
+    event.preventDefault();
+    var $section = $($(this).attr('href'));
+    $('html, body').animate({
+      scrollTop: $section.offset().top - 140 // Bottom değerini 140px olarak ayarlayın
+    }, 500);
+  }
+  $('[data-scroll]').on('click', scrollToSection);
+
+  // Linklere tıklandığında active sınıfını ekle, menüyü kapat
+  $(".nav li a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    $("#navbar").removeClass("in");
+  });
+});

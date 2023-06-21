@@ -100,7 +100,11 @@
     transform: rotate(45deg);
     top: 0;
 }
-
+.inner-header li a:hover, .inner-header li a.active{
+    color: $primary-color;
+    border-bottom: 1px solid $primary-color;
+    transition: ease-in-out 0.150s;
+}
 @media (min-width:800px)
 {
     .inner-header li{
@@ -109,12 +113,6 @@
     .inner-header li a
     {
         padding: 20px 30px;
-        
-    }
-    .inner-header li a:hover{
-        color: $primary-color;
-        border-bottom: 1px solid $primary-color;
-        transition: ease-in-out 0.150s;
     }
     .inner-header .menu 
     {

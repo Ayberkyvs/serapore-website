@@ -17,19 +17,20 @@
 .page-item-2{
     background-color: $secondary-color;
     display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: auto !important;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .page-item-3{
     background-color: $fifth-color;
     display: flex;
     position: relative;
     height: auto !important;
-    padding: 30px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .page-item-4{
     background-color: $secondary-color;
@@ -66,6 +67,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .page-item-3{padding: 0 !important;}
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
