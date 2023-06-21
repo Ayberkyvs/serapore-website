@@ -189,7 +189,8 @@
         }
     }
     .client-gallery{
-        padding: 10px;
+        padding: 10px !important;
+        justify-content: space-evenly !important;
         div{
             margin: 0px !important;
         }
