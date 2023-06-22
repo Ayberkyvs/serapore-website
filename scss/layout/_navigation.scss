@@ -11,8 +11,6 @@
 }
 .menu
 {
-    display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
     margin: 0px;
@@ -25,7 +23,7 @@
 {
     display: flex;
     display: block;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     font-size: 12px;
 }
@@ -116,6 +114,7 @@
     }
     .inner-header .menu 
     {
+        display: flex;
         clear: none;
         float: right;
         max-height: none;

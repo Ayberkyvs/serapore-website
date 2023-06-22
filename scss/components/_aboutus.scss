@@ -1,7 +1,7 @@
 .aboutus{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: $header-inner !important;
@@ -11,7 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: left;
-        width: 40%;
+        width: 45%;
         height: 90%;
     }
     .aboutus-col1{
@@ -20,6 +20,24 @@
         flex-direction: column;
         height: auto;
         @include info-container;
+        h5{
+            text-align: left;
+        }
+    }
+    #readmore-text{
+        display: flex;
+        flex-direction: column;
+        strong{color: $primary-color; font-weight: bold;}
+        .readmore-text-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            div{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     }
     .aboutus-col2{
         height: 450px;
@@ -33,7 +51,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width:50%;
+                width: 50%;
                 height: 100%;
                 h3{
                     display: block;
@@ -50,7 +68,7 @@
                 h5{
                     color: white;
                     font-size: 18px;
-                    text-align: justify;
+                    text-align: left;
                     font-weight: $paragraph;
                 }
             }
@@ -76,8 +94,8 @@
             width: 100%;
             margin-bottom: 20px;
             h3{
-                font-size: 30px !important;
-                width: 150px !important;
+                font-size: 35px !important;
+                width: 180px !important;
             }
             h5{
                 font-size: 16px !important;

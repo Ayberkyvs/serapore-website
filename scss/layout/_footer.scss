@@ -12,6 +12,7 @@
     .inner-footer{
         display: flex;
         flex-direction: row;
+        width: 100%;
         height: 250px;
         justify-content: space-between;
         align-items: center;
@@ -22,6 +23,8 @@
         align-items: center;
         img{
             width: 70%;
+            max-width: 400px;
+            min-width: 250px;
         }
     }
     .footer-2{
@@ -117,21 +120,11 @@
         border-right: 0px !important;
         border-bottom: 2px solid $primary-color !important;
     }
-    .footer-1{
-        img{
-            width: 500px;
-        }
-    }
     }
 }   
 @media screen and (max-width: 799px){
     .footer{
         top: 100px;
-    }
-    .footer-1{
-        img{
-            width: 80% !important;
-        }
     }
     .footer-copyright{
         flex-direction: column;

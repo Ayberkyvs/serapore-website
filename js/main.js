@@ -76,3 +76,25 @@ jQuery(document).ready(function($) {
     $("#navbar").removeClass("in");
   });
 });
+
+
+const idliButton = document.getElementById("readmore");
+const readmoreText = document.getElementById("readmore-text");
+
+let isDisplayed = false;
+
+idliButton.addEventListener("click", function() {
+  if (isDisplayed) {
+    readmoreText.style.display = "none";
+    idliButton.style.backgroundColor = "#f18f01";
+    idliButton.style.color = "white";
+    idliButton.textContent = "Daha Fazla";
+    isDisplayed = false;
+  } else {
+    readmoreText.style.display = "flex";
+    idliButton.textContent = "Daha Az";
+    idliButton.style.backgroundColor = "transparent";
+    idliButton.style.color = "#f18f01";
+    isDisplayed = true;
+  }
+});
