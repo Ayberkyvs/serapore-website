@@ -1,168 +1,175 @@
 <!doctype html>
 <html lang="tr">
 
-
-<!--
-██╗░░░██╗░█████╗░██╗░░░██╗░█████╗░░██████╗
-╚██╗░██╔╝██╔══██╗██║░░░██║██╔══██╗██╔════╝
-░╚████╔╝░███████║╚██╗░██╔╝███████║╚█████╗░
-░░╚██╔╝░░██╔══██║░╚████╔╝░██╔══██║░╚═══██╗
-░░░██║░░░██║░░██║░░╚██╔╝░░██║░░██║██████╔╝
-░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═════╝░
-Unauthorized and misuse of codes is prohibited.
-All Rights Reserved.
-https://ayberkyavas.com
--->
-
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Serapore seramik makineleri resmi websitesine hoşgeldiniz. Websitesi şu anda yapım aşamasındadır.">
-    <meta name="keywords" content="serapore,vitrifiye,makine,kalıp,seramik,üretim,döküm">
-    <meta name="author" content="Ayberk Yavaş">
-    <meta name="apple-mobile-web-app-title" content="SeraPore">
+    <!-- PWA Mobil Uygulama Desteği -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
     <title>404 | SeraPore</title>
-    <link rel="stylesheet" href="scss/404.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <!-- FONT ICIN -->
-    <script src="https://kit.fontawesome.com/ec613c6134.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <!--================ Loader Başlangıç =================-->
-    <div id="loader">
-    </div>
-    <!--================ Loader Bitiş =================-->
-
-    <!--================ Demo Başlangıç =================-->
-
-    <div id="demo-div">
-        <ul class="demo-div-menu">
-            <li><i class="fa-regular fa-envelope"></i> info@serapore.com.tr</li>
-            <li><i class="fa-solid fa-phone"></i> 262 606 1064</li>
-            <li><i class="fa-regular fa-clock"></i> 07:00 - 16:00</li>
-            <li><i class="fa-solid fa-location-dot"></i> Kocaeli, Türkiye</li>
-            <a href="https://www.ayberkyavas.com" target="_blank" class="betaLogo1"><img src="img/beta.png"
-                    alt="Beta Logosu"></a>
-        </ul>
-    </div>
-
-    <!--================ Demo Bitiş =================-->
-
-    <!--================ Header Başlangıç =================-->
-    <header>
-        <div class="header">
-            <div class="inner-header">
-                <a href="https://www.ayberkyavas.com" target="_blank" class="betaLogo"><img src="img/beta.png"
-                        alt="Beta Logosu"></a>
-                <div id="mainLogo" class="mainLogo">
-                    <a href="main.html" style="text-decoration: none; color: black; cursor: default;"><img
-                            src="img/mainLogo.webp" alt="Logo"></a>
-                </div>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-                <ul class="menu">
-                    <li><a data-scroll href="#aboutus"><i class="fa-regular fa-address-card"></i> Hakkımızda</a>
-                    </li>
-                    <li><a data-scroll href="#services"><i class="fa-solid fa-plug"></i> Hizmetler</a></li>
-                    <li><a href="urunler.html"><i class="fa-solid fa-bolt"></i> Ürünlerimiz</a></li>
-                    <li><a data-scroll href="#contact"><i class="fa-regular fa-address-book"></i> İletişim</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <!--================ Header Bitiş =================-->
-
     <!--================ Main Alanı Başlangıç =================-->
     <main>
         <section>
-            <div class="main-container">
-                <div class="inner-main-container">
-
+            <div class="error-page">
+                <div>
+                    <h1 data-h1="404">404</h1>
+                    <p data-p="NOT FOUND">NOT FOUND</p>
                 </div>
             </div>
+            <div id="tsparticles"></div>
+
         </section>
     </main>
 
     <!--================ Main Alanı Bitiş =================-->
+    <style>
+        .error-page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 80vh;
+            position: relative;
+            top: 140px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
 
-    <!--================ Footer Alanı Başlangıç =================-->
-    <footer class="footer">
-        <div class="inner-footer">
-            <div class="footer-1">
-                <img src="img/mainLogo.webp" alt="Serapore Footer Logo">
-            </div>
-            <div class="footer-2">
-                <h3 style="text-transform: uppercase;" class="footer-location">kocaelı,turkey</h3>
-                <h5 style="text-decoration: underline;">info@serapore.com.tr</h5>
-                <h5>+90 532 421 4816 / +90 552 483 66 70</h5>
-                <h5>Hacı Halil mah.1226 sok. No:11 Daire 17 Gebze Kocaeli Türkiye,</h5>
-                <a
-                    href="https://www.google.com/maps/search/Hac%C4%B1halil,+1226.+Sk.+No:11+D:17,+41400+Gebze%2FKocaeli/@40.7992707,29.4336316,18.25z?entry=ttu">
-                    <h4 style="text-decoration: underline; text-transform: uppercase;">HARITADA GORUNTULE <i
-                            class="fa-solid fa-location-arrow" style="text-decoration: underline;"></i></h4>
-                </a>
-            </div>
-            <div class="footer-2">
-                <h3 style="text-transform: uppercase;" class="footer-location">Sayfalar</h3>
-                <a href="main.html#aboutus">
-                    <h5>Hakkımızda</h5>
-                </a>
-                <a href="main.html#services">
-                    <h5>Hizmetler</h5>
-                </a>
-                <a href="urunler.html">
-                    <h5>Ürünlerimiz</h5>
-                </a>
-                <a href="main.html#contact">
-                    <h5>İletişim</h5>
-                </a>
-                <a data-scroll href="#main">
-                    <h4 style="text-decoration: underline; text-transform: uppercase;">Ana Sayfayaya Dön <i
-                            class="fa-solid fa-location-arrow" style="text-decoration: underline;"></i></h4>
-                </a>
-            </div>
-            <div class="footer-3">
-                <h3 style="text-transform: uppercase;" class="footer-location">İletişimi koparmayalım, e-posta adresini
-                    gir,
-                    güncel
-                    kal</h3>
-                <a href="hakkimizda.html" target="_blank">
-                    <h5 style="text-decoration: underline;">KAYIT OLMAK ICIN TIKLA <i class="fa-solid fa-arrow-right"
-                            style="text-decoration: underline;"></i></h5>
-                </a>
-                <div class="footer-social">
-                    <h3 style="text-transform: uppercase;">Bizi Takip Et!</h3>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="https://youtube.com/@ErtugruLAxeL" target="_blank"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <h3>&copy 2023 SeraPore Makine Sanayi Ve Ticaret Ltd, Tüm hakları saklıdır.</h3>
-            <h3 id="author-mark">powered by <a href="https://www.ayberkyavas.com" target="_blank"
-                    style="color: black; text-decoration: none;">YAVAS Tech.</a></h3>
-        </div>
-    </footer>
-    <!--================ Footer Alanı Bitiş =================-->
+        .error-page h1 {
+            font-size: 30vh;
+            font-weight: bold;
+            position: relative;
+            margin: -8vh 0 0;
+            padding: 0;
+        }
 
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        .error-page h1:after {
+            content: attr(data-h1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: transparent;
+            /* webkit only for graceful degradation to IE */
+            background: -webkit-repeating-linear-gradient(-45deg,
+                    #ff7f00,
+                    #00ffff,
+                    #8a2be2,
+                    #ff1493,
+                    #9932cc,
+                    #00ced1,
+                    #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 400%;
+            text-shadow: 1px 1px 2px transparentize(#fff, 0.75);
+            animation: animateTextBackground 10s ease-in-out infinite;
+        }
+
+        .error-page h1+p {
+            color: #d6d6d6;
+            font-size: 8vh;
+            font-weight: bold;
+            line-height: 10vh;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .error-page h1+p:after {
+            content: attr(data-p);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: transparent;
+            text-shadow: 1px 1px 2px transparentize(#fff, 0.5);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+        }
+
+        #tsparticles {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        @keyframes animateTextBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            25% {
+                background-position: 100% 0;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0 100%;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .error-page {
+                top: 110px;
+            }
+
+            .error-page h1 {
+                font-size: 32vw;
+            }
+
+            .error-page h1+p {
+                font-size: 8vw;
+                line-height: 10vw;
+                max-width: 70vw;
+            }
+        }
+
+        a.back {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176);
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            padding: 15px 30px;
+            text-decoration: none;
+            transition: 0.25s all ease-in-out;
+        }
+
+        a.back:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            font-family: "Miriam Libre", sans-serif;
+            background: white url("../../img/body-bg.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        /*# sourceMappingURL=404.css.map */
+    </style>
 </body>
 
 </html>
