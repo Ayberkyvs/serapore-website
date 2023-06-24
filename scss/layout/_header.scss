@@ -11,9 +11,9 @@ $header-inner: 90%;
     position: fixed;
     background-color: $primary-color;
     width: 100%;
-    height: 50px;
+    height: 40px;
     color: white;
-    z-index: 3;
+    z-index: 99 !important;
     .demo-div-menu{
         display: flex;
         list-style: none;
@@ -51,18 +51,20 @@ $header-inner: 90%;
 .header
 {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 90px !important;
+    height: 140px !important;
     background-color: $fifth-color;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
-    top: 50px;
     z-index: 3;
     .inner-header{
+        position: relative;
+        top: 40px;
         width: $header-inner;
-        height: 100%;
+        height: 100px;
         align-items: center;
         justify-content: space-between;
         .mainLogo{
@@ -82,6 +84,40 @@ $header-inner: 90%;
         }
     }
 }
+//
+.bayraksec{
+    z-index: 4;
+    background-color: transparent !important;
+    width: auto !important;
+    border: 0px !important;
+}
+.lang-dropdown{
+    .lang-flag{
+        width: 30px;
+        max-width: 30px;
+        background-color: transparent !important;
+    }
+    .lang-menu{
+        li{
+            padding: 0px !important;
+            margin: 0px !important;
+            width: 100% !important;
+            border: 0px !important;
+        }
+        .dropdown-item:hover{
+            color: black;
+            border: 0px !important;
+        }
+        .dropdown-item:active{
+            background-color: $primary-color !important;
+            border: 1px solid red !important;
+        }
+    }
+}
+.lang2{
+    display: none !important;
+}
+//////////////////////////
 .betaLogo1{
     img{
         width: 50px;
@@ -108,6 +144,21 @@ $header-inner: 90%;
 }    
 
 @media screen and (max-width: 799px) {
+    .lang1{
+        display: none !important;
+    }
+    .lang2{
+        z-index: 5;
+        display: inline-flex !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 50% !important;
+        transform: translate(0%, -50%);
+        .bayraksec{color: black !important;}
+        .bayraksec:hover:focus{
+            color: black !important;
+        }
+    }
     .betaLogo1{
         display: none;
     }
@@ -152,9 +203,10 @@ $header-inner: 90%;
         }
     }
     .header{
-        height: 60px !important;
+        height: 100px !important;
     }
     .inner-header{
         width: 100% !important;
+        height: 60px !important;
     }
 }
