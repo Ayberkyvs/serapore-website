@@ -1,0 +1,88 @@
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 140px;
+    .inner-main-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+.page-item-2{
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.page-item-3{
+    background-color: $fifth-color;
+    display: flex;
+    position: relative;
+    height: auto !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.page-item-4{
+    background-color: $secondary-color;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    padding: 50px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.page-item-5{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    padding: 50px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background: url("../img/contactbg.webp") center no-repeat;
+    background-size: cover;;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .main-container
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 799px) {
+    .main-container
+    {
+        top: 100px !important;
+        width: 100%;
+    }
+    .inner-main-container{
+        width: 100% !important;
+    }
+    .container-fluid{
+        min-width: 100% !important;
+    }
+    .page-item-2{
+        padding: 0px !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .page-item-3{padding: 0 !important;}
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    
+}

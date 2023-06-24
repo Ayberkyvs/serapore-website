@@ -1,0 +1,21 @@
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//Base 
+@import "base/reset";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+// Components
+@import "components/slider";
+@import "components/aboutus";
+@import "components/ourclients";
+@import "components/services";
+@import "components/contactform";
+
+// Pages
+@import "pages/home";

@@ -1,0 +1,16 @@
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+//Base 
+@import "base/reset";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+// Components
+
+// Pages
+@import "pages/urunler";
