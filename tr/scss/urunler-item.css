@@ -93,6 +93,7 @@ html, body {
   top: 40px;
   width: 90%;
   height: 100px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -384,21 +385,20 @@ html, body {
 }
 
 .menu {
-  align-items: center;
   position: relative;
   margin: 0px;
   padding: 0px;
   list-style: none;
   overflow: hidden;
   background-color: white;
+  overflow: hidden;
 }
 
 .menu a {
-  display: flex;
   display: block;
   padding: 15px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .menu a:hover {
@@ -412,6 +412,10 @@ html, body {
 }
 
 .inner-header .menu-icon {
+  position: relative;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
   padding: 28px 20px;
   position: relative;
   float: right;
@@ -454,7 +458,7 @@ html, body {
 }
 
 .inner-header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 270px;
 }
 
 .inner-header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -477,7 +481,32 @@ html, body {
   transition: ease-in-out 0.15s;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1400px) {
+  .menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu a i {
+    margin-right: 3px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 800px) {
+  .menu a {
+    display: block !important;
+  }
+  .menu a i {
+    width: 20px;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
   .inner-header li {
     float: left;
   }
@@ -485,7 +514,6 @@ html, body {
     padding: 20px 30px;
   }
   .inner-header .menu {
-    display: flex;
     clear: none;
     float: right;
     max-height: none;

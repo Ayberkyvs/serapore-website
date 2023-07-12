@@ -150,6 +150,7 @@ body {
   top: 40px;
   width: 90%;
   height: 100px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
