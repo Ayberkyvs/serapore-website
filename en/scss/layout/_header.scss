@@ -43,7 +43,7 @@ $header-inner: 90%;
 	position: fixed;
 	width: 100%;
     height: 100vh;
-	background: rgba(0,0,0, 0.8) url("../../img/loading.gif") no-repeat center;
+	background: rgba(0,0,0, 0.8) url("../img/loading.gif") no-repeat center;
     background-size: 60px;
 	z-index: 999;
     overflow: visible;
@@ -65,6 +65,7 @@ $header-inner: 90%;
         top: 40px;
         width: $header-inner;
         height: 100px;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
         .mainLogo{
